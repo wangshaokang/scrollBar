@@ -1,4 +1,5 @@
 # scrollBar 
+###将js文件引入，直接调用即可。
 ```
   $(function () {
     $("._scroll").scrollBar({
