@@ -37,7 +37,7 @@ $.fn.scrollBar = function(options)
 	if(!("onmousewheel" in document)){					/*浏览器鼠标滚动事件的简单兼容*/
 		sMouseWheel = "DOMMouseScroll";
 	}   
-	$(document).on(sMouseWheel,function(ev){			/*处理区域滚动与文档默认滚动冲突*/
+	$(this).on(sMouseWheel,function(ev){			/*处理区域滚动与文档默认滚动冲突*/
 		if(w.MouseInScroll)
 			ev.preventDefault();
 	});
